@@ -1,0 +1,2713 @@
+/* =====================
+   GLOBAL RESET & THEME
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #FFF8EE;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.nav {
+  background: #7B1E1E;
+  color: #fff;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.nav nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav a:hover,
+.nav a.active {
+  text-decoration: underline;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  background: linear-gradient(to right, #7B1E1E, #A52A2A);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #7B1E1E;
+  font-size: 28px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+.page-header h1 {
+  color: #7B1E1E;
+  margin-bottom: 6px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn {
+  background: #D4AF37;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btn.small {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+/* =====================
+   CARDS
+===================== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #7B1E1E;
+  margin-bottom: 8px;
+}
+
+.price-range {
+  font-size: 14px;
+  color: #666;
+}
+
+/* =====================
+   GUEST INPUT
+===================== */
+.guest-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#guestCount {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+/* =====================
+   ACCORDION MENU
+===================== */
+.accordion {
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.accordion-btn {
+  width: 100%;
+  background: #7B1E1E;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-btn::after {
+  content: "▼";
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-btn.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding: 0 20px;
+}
+
+.accordion-content label {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.accordion-content input {
+  margin-right: 8px;
+}
+
+/* =====================
+   TOTAL BOX
+===================== */
+.total-box {
+  background: #2E7D32;
+  color: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.total-box h2 {
+  margin-bottom: 10px;
+}
+
+.total-box p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* =====================
+   CTA
+===================== */
+.cta {
+  background: #7B1E1E;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  background: #3A0F0F;
+  color: #ddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* =====================
+   FLOATING WHATSAPP
+===================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 32px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.logo img {
+  height: 150px;
+  width: auto;
+}
+.nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav .logo span {
+  position: relative;
+  top: -3px;
+}
+.nav nav {
+  display: flex;
+  gap: 30px;
+}
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+/* CONTACT PAGE LAYOUT */
+.contact-section {
+  text-align: center;
+}
+
+.contact-cards {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Suitable For Section */
+.suitable-section {
+  padding: 60px 20px;
+  background: #fff6ec;
+  text-align: center;
+}
+
+.suitable-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.suitable-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.suitable-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.suitable-card img {
+  width: 100%;
+  height: 160px;              /* 🔥 controls image height */
+  object-fit: cover;          /* prevents stretching */
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.suitable-card p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.labour-section {
+  padding: 70px 20px;
+  background: #fff7ec;
+}
+
+.labour-wrapper {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Main labour card */
+.labour-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.labour-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.extra-note {
+  margin-top: 20px;
+  padding: 15px;
+  background: #7B1E1E;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Flashy highlight box */
+.labour-highlight {
+  background: linear-gradient(135deg, #7B1E1E, #a12a2a);
+  color: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.labour-highlight h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.labour-highlight p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .labour-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 70px;              /* 🔥 makes box tall */
+  font-size: 30px;           /* 🔥 text bigger */
+  padding: 0 20px;           /* 🔥 inner spacing */
+  border-radius: 20px;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+
+/* SERVICES SECTION */
+.home-services {
+  padding: 60px 20px;
+  background: #fff6ec;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* FORCE 3 columns */
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Responsive fallback (IMPORTANT) */
+@media (max-width: 900px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.service-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  padding: 15px;
+  color: #7a1f1f;
+}
+
+/* IMAGE STRIP */
+.image-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.image-strip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+/* ===============================
+ FLASHY SERVICE CARD EFFECT
+================================ */
+
+.service-card {
+  background: linear-gradient(135deg, #fff5eb, #ffe8d6);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Image styling */
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Text */
+.service-card h3 {
+  padding: 15px;
+  text-align: center;
+  color: #7a1f1f;
+  font-weight: 600;
+}
+
+/* 🔥 Hover animation */
+.service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 45px rgba(122, 31, 31, 0.35);
+}
+
+/* Zoom image on hover */
+.service-card:hover img {
+  transform: scale(1.12);
+}
+
+/* Glow overlay */
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top,
+    rgba(122,31,31,0.25),
+    transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+
+
+
+
+/* ===============================
+ WHY CHOOSE US – PREMIUM CARDS
+================================ */
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(135deg, #fff4ea, #ffe3cf);
+  border-radius: 22px;
+  padding: 35px 30px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title */
+.card h3 {
+  color: #7a1f1f;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.card p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 🔥 Hover animation */
+.card:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 28px 55px rgba(122,31,31,0.35);
+}
+
+/* Soft glow overlay */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(122, 31, 31, 0.25),
+    transparent 65%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+
+
+/* =========================
+   SUITABLE FOR – GLOW UP
+========================= */
+
+.suitable-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.suitable-card {
+  background: linear-gradient(180deg, #fff7ef, #fff1e4);
+  border-radius: 20px;
+  padding: 25px 20px 30px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.suitable-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(128, 0, 0, 0.25);
+}
+
+/* IMAGE STYLING */
+.suitable-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.4s ease;
+}
+
+.suitable-card:hover img {
+  transform: scale(1.08);
+}
+
+/* TITLE */
+.suitable-card h4 {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #7a1f1f;
+}
+
+/* DESCRIPTION */
+.suitable-card p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* SOFT GLOW BORDER */
+.suitable-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: border 0.35s ease;
+}
+
+.suitable-card:hover::after {
+  border-color: rgba(128, 0, 0, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .suitable-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .suitable-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =========================
+   IMPORTANT NOTES – GLOW UP
+========================= */
+
+/* ================================
+ IMPORTANT NOTES BOX
+================================ */
+
+.important-box {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px 45px;
+  background: linear-gradient(135deg, #fff3e8, #ffe8d6);
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+  transition: all 0.35s ease;
+}
+
+/* LEFT ACCENT STRIP */
+.important-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  bottom: 20px;
+  width: 6px;
+  background: linear-gradient(180deg, #8b1d1d, #c0392b);
+  border-radius: 6px;
+}
+
+/* TITLE */
+.important-title {
+  text-align: center;
+  font-size: 34px;
+  color: #7a1f1f;
+  margin-bottom: 30px;
+}
+
+/* LIST */
+.important-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.important-list li {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-left: 40px;
+  position: relative;
+}
+
+/* ICON BULLET */
+.important-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 18px;
+  color: #8b1d1d;
+  font-weight: bold;
+}
+
+/* HOVER EFFECT */
+.important-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 35px 70px rgba(139, 29, 29, 0.35);
+}
+
+/* ================================
+ WHATSAPP CLICK FIX
+================================ */
+.whatsapp-btn {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 5;
+}
+
+/* ================================
+ CONTACT PAGE LINK CLEANUP
+================================ */
+.plain-link {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.plain-link:hover {
+  color: #7a1f1f;
+}
+
+/* ================================
+ ACCORDION BUTTON LAYOUT (MENU)
+================================ */
+
+/* 🔥 FIXED: FULL WIDTH AGAIN */
+.accordion {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 600;
+
+  background: #7a1f1f;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-btn:hover {
+  background: #611616;
+  transform: translateY(-1px);
+}
+
+/* ARROW */
+.accordion-btn::after {
+  content: "▼";
+  font-size: 14px;
+}
+
+/* ================================
+ ACCORDION CONTENT
+================================ */
+.accordion-content {
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 6px;
+
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height 0.3s ease;
+  padding: 0 16px;
+}
+
+.accordion-content label {
+  display: block;
+  padding: 8px 0;
+  font-size: 15px;
+  color: #222;
+}
+
+
+/* ================================
+ ACTIVE NAV LINK (CURRENT PAGE)
+================================ */
+
+/* ================================
+ NAV ACTIVE – SOFT OUTLINE STYLE
+================================ */
+
+.nav nav a {
+  position: relative;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+/* Hover effect for all links */
+.nav nav a:hover {
+  background: rgba(255, 215, 0, 0.15);
+}
+
+/* Active page highlight */
+.nav nav a.active {
+  background: linear-gradient(135deg, #d4af37, #f1c40f);
+  color: #000 !important;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Small bottom indicator line */
+/* ================================
+ NAV ACTIVE – SOFT OUTLINE STYLE
+================================ */
+
+.nav nav a {
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.nav nav a:hover {
+  color: #f1c40f;
+}
+
+.nav nav a.active {
+  color: #f1c40f;
+  border: 1.5px solid rgba(241, 196, 15, 0.8);
+  background: rgba(241, 196, 15, 0.08);
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* =====================================
+   FINAL MOBILE FIX — DO NOT EDIT ABOVE
+===================================== */
+@media (max-width: 768px) {
+
+  /* ---------- NAVBAR ---------- */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 10px;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .nav nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .nav nav a {
+    font-size: 13px;
+    padding: 6px 8px;
+    white-space: nowrap;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero {
+    padding: 40px 14px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hero .btn {
+    width: 90%;
+    max-width: 320px;
+    display: block;
+    margin: 8px auto;
+  }
+
+  /* ---------- WHY CHOOSE US ---------- */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 12px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ---------- GENERAL SAFETY ---------- */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ GLOBAL THEME RESET (ALL PAGES)
+=============================== */
+
+:root {
+  --bg-main: #f6faf9;           /* light soothing background */
+  --bg-header: #6fa9a3;         /* soft cyan/teal */
+  --bg-card: #fff7ee;           /* warm cream */
+  --bg-accent: #d9b44a;         /* soft gold */
+  --bg-footer: #4f7f7a;         /* darker cyan */
+
+  --text-dark: #243333;
+  --text-light: #ffffff;
+  --border-soft: rgba(0,0,0,0.08);
+}
+
+/* ===============================
+ PAGE BACKGROUND
+=============================== */
+
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+}
+
+/* ===============================
+ HEADER / NAVBAR (ALL PAGES)
+=============================== */
+
+header.nav {
+  background: var(--bg-header);
+}
+
+header.nav span,
+header.nav nav a {
+  color: var(--text-light);
+}
+
+/* Active page indicator – minimal underline */
+header.nav nav a.active {
+  color: #fff;
+  position: relative;
+}
+
+header.nav nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: var(--bg-accent);
+  border-radius: 4px;
+}
+
+/* ===============================
+ HERO SECTION (HOME PAGE)
+=============================== */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #7fbfba,
+    #5fa3a0
+  );
+  color: var(--text-light);
+}
+
+.hero .btn {
+  background: var(--bg-accent);
+  color: #222;
+}
+
+.hero .btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ===============================
+ CARDS (Why Choose Us, Contact, etc.)
+=============================== */
+
+.card,
+.contact-card,
+.important-box {
+  background: var(--bg-card);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-radius: 18px;
+}
+
+/* ===============================
+ SECTION TITLES
+=============================== */
+
+.section-title,
+.important-title {
+  color: #355f5b;
+}
+
+/* ===============================
+ ACCORDION BUTTONS (MENU PAGE)
+=============================== */
+
+.accordion-btn {
+  background: #6fa9a3;
+  color: var(--text-light);
+}
+
+.accordion-btn:hover {
+  background: #5a9791;
+}
+
+/* ===============================
+ TOTAL ESTIMATE BOX (MENU)
+=============================== */
+
+.total-box {
+  background: #7fbf8c; /* soft green */
+  color: #fff;
+}
+
+.total-box .btn {
+  background: var(--bg-accent);
+  color: #222;
+}
+
+/* ===============================
+ ON-SITE COOKING INFO BOXES
+=============================== */
+
+.traditional-box,
+.quote-box {
+  background: #eef7f6;
+  color: var(--text-dark);
+}
+
+/* ===============================
+ FOOTER (ALL PAGES)
+=============================== */
+
+footer.footer {
+  background: var(--bg-footer);
+  color: var(--text-light);
+}
+
+/* ===============================
+ WHATSAPP FLOAT
+=============================== */
+
+.whatsapp-float {
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ GLOBAL THEME RESET (ALL PAGES)
+ THEME 3 — SAND & CREAM
+=============================== */
+
+:root {
+  --bg-main: #faf7f2;          /* soft cream page background */
+  --bg-header: #e7dccb;        /* sand beige (navbar + hero) */
+  --bg-card: #ffffff;          /* clean white cards */
+  --bg-accent: #c9a24d;        /* soft luxury gold */
+  --bg-footer: #5a4632;        /* deep warm brown */
+
+  --text-dark: #4a3b2a;        /* warm dark brown */
+  --text-light: #ffffff;
+  --border-soft: rgba(0,0,0,0.08);
+}
+
+/* ===============================
+ PAGE BACKGROUND
+=============================== */
+
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+}
+
+/* ===============================
+ HEADER / NAVBAR (ALL PAGES)
+=============================== */
+
+header.nav {
+  background: var(--bg-header);
+}
+
+header.nav span,
+header.nav nav a {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Active page indicator – elegant underline */
+header.nav nav a.active {
+  position: relative;
+  color: var(--text-dark);
+}
+
+header.nav nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: var(--bg-accent);
+  border-radius: 4px;
+}
+
+/* ===============================
+ HERO SECTION (HOME PAGE)
+=============================== */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #e7dccb,
+    #dfd2be
+  );
+  color: var(--text-dark);
+}
+
+.hero h1,
+.hero p {
+  color: var(--text-dark);
+}
+
+.hero .btn {
+  background: var(--bg-accent);
+  color: #2b1f12;
+  font-weight: 600;
+}
+
+.hero .btn:hover {
+  filter: brightness(0.95);
+}
+
+/* ===============================
+ CARDS (Why Choose Us, Contact, Notes)
+=============================== */
+
+.card,
+.contact-card,
+.important-box {
+  background: var(--bg-card);
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.10);
+}
+
+/* ===============================
+ SECTION TITLES
+=============================== */
+
+.section-title,
+.important-title {
+  color: #5a4632;
+}
+
+/* ===============================
+ ACCORDION BUTTONS (MENU PAGE)
+=============================== */
+
+.accordion-btn {
+  background: #d8c6a6;
+  color: #3a2d1f;
+  font-weight: 600;
+}
+
+.accordion-btn:hover {
+  background: #cdb894;
+}
+
+/* ===============================
+ TOTAL ESTIMATE BOX (MENU PAGE)
+=============================== */
+
+.total-box {
+  background: #e4d6bc;
+  color: #3a2d1f;
+}
+
+.total-box .btn {
+  background: var(--bg-accent);
+  color: #2b1f12;
+  font-weight: 600;
+}
+
+/* ===============================
+ ON-SITE COOKING INFO BOXES
+=============================== */
+
+.traditional-box,
+.quote-box {
+  background: #ffffff;
+  color: var(--text-dark);
+}
+
+/* ===============================
+ FOOTER (ALL PAGES)
+=============================== */
+
+footer.footer {
+  background: var(--bg-footer);
+  color: var(--text-light);
+}
+
+/* ===============================
+ WHATSAPP FLOAT
+=============================== */
+
+.whatsapp-float {
+  box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+/* FORCE COLOR FOR "WHY CHOOSE US" 3 CARDS */
+section h2 + .cards .card,
+section h3 + .cards .card,
+.cards > .card {
+  background: #f3e6d6 !important;   /* visible sand / warm beige */
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+}
+
+/* Card titles */
+.cards > .card h3 {
+  color: #7a4b2e;
+}
+
+/* Card text */
+.cards > .card p {
+  color: #4b3b2a;
+}
+
+/* Hover polish */
+.cards > .card:hover {
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* WHY CHOOSE US – hover refinement */
+.cards > .card {
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+}
+
+/* Hover effect */
+.cards > .card:hover {
+  transform: translateY(-6px);
+  background: #f3e6d6; /* slightly deeper warm tone */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Title hover emphasis */
+.cards > .card:hover h3 {
+  color: #5a3d25;
+}
+.cards > .card:hover p {
+  opacity: 0.95;
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ SWEETS HOME SECTION
+=============================== */
+
+.sweets-home {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fbf6ee; /* soft sand */
+}
+
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+.sweet-card {
+  background: #f1e4cf; /* visible but soft */
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.sweet-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sweet-card h3 {
+  margin: 16px 0 6px;
+  color: #6b4e2e;
+}
+
+.sweet-card p {
+  font-size: 14px;
+  padding: 0 14px 18px;
+  color: #4a3b2a;
+}
+
+/* Hover effect */
+.sweet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 45px rgba(0,0,0,0.15);
+}
+
+.sweets-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #d4a853;
+  color: #2b1e0f;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sweets-btn:hover {
+  background: #c49a45;
+}
+
+
+
+
+/* ===============================
+ SWEETS PAGE STYLING
+=============================== */
+
+.sweets-hero {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.sweets-hero h1 {
+  font-size: 36px;
+  color: #5a4632;
+  margin-bottom: 10px;
+}
+
+.sweets-tagline {
+  font-size: 18px;
+  font-weight: 600;
+  color: #8a6a3f;
+}
+
+.sweets-section {
+  padding: 40px 6%;
+}
+
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.sweet-card {
+  background: #f3e6d3;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sweet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.sweet-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.sweet-card h3 {
+  color: #5a3d1e;
+  margin-bottom: 6px;
+}
+
+.sweet-card .price {
+  font-weight: 700;
+  color: #7a4f1d;
+}
+
+.sweets-btn {
+  display: inline-block;
+  margin: 40px auto 0;
+  background: #d4a93d;
+  color: #222;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.sweets-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.sweets-row {
+  display: grid;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.top-row {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom-row {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.sweets-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+/* ===== SWEETS GRID LAYOUT FIX ===== */
+
+.sweets-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.sweets-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.row-4 {
+  justify-content: space-between;
+}
+
+.row-3 {
+  justify-content: center;
+}
+
+.row-2 {
+  justify-content: center;
+}
+
+/* Sweet Card */
+.sweet-card {
+  background: #f6e9d3;
+  border-radius: 20px;
+  padding: 18px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sweet-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.sweet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.sweet-card h3 {
+  color: #5a3b1e;
+  margin-bottom: 6px;
+}
+
+.sweet-card .price {
+  font-weight: 600;
+  color: #7a532c;
+}
+
+/* CTA */
+.sweets-cta {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* ===== MOBILE FIX FOR SWEETS PAGE ===== */
+@media (max-width: 768px) {
+
+  /* Stack rows properly */
+  .sweets-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Make cards wider on mobile */
+  .sweet-card {
+    width: 90%;
+    max-width: 340px;
+    padding: 16px;
+  }
+
+  /* Fix image height */
+  .sweet-card img {
+    height: 180px;
+    border-radius: 16px;
+  }
+
+  /* Fix text wrapping */
+  .sweet-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .sweet-card .price {
+    font-size: 15px;
+  }
+
+  /* CTA spacing */
+  .sweets-cta {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #d4af37;
+  color: #5a3e1b;
+}
+
+.btn-outline:hover {
+  background: #d4af37;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* ===========================
+   MOBILE RESPONSIVE FIXES
+   =========================== */
+@media (max-width: 768px) {
+
+  /* ---------- NAVBAR ---------- */
+  .nav {
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .nav nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* ---------- HERO SECTION ---------- */
+  .hero h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  /* ---------- SWEETS HERO ---------- */
+  .sweets-hero h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .sweets-tagline {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  /* ---------- SWEETS LAYOUT ---------- */
+  .sweets-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  /* Each sweet card */
+  .sweet-card {
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  /* Image fix (MOST IMPORTANT) */
+  .sweet-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  /* Text sizes */
+  .sweet-card h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  /* ---------- CTA BUTTON ---------- */
+  .sweets-cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .sweets-btn {
+    width: 90%;
+    max-width: 280px;
+    margin: auto;
+  }
+
+  /* ---------- WHY CHOOSE US CARDS ---------- */
+  .cards {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+.map-container {
+  width: 100%;
+  height: 380px;
+  margin-top: 20px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .map-container {
+    height: 280px;
+  }
+}
+
+
+
+
+
+
+.map-container {
+  width: 100%;
+  max-width: 900px;   /* 👈 this controls size (like NexGen site) */
+  margin: 20px auto;  /* centers it */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 380px;      /* balanced height */
+  border: 0;
+}
+@media (max-width: 768px) {
+  .map-container {
+    max-width: 95%;
+  }
+
+  .map-container iframe {
+    height: 280px;
+  }
+}
+
+
+
+
+
+
+.directions-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0 40px;
+}
+
+.directions-btn {
+  background-color: #d4af37;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.directions-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+@media (max-width: 768px) {
+  .directions-btn {
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+/* ===============================
+ CONTACT PAGE – CARDS STYLING
+=============================== */
+
+.contact-page .contact-card {
+  background: linear-gradient(
+    135deg,
+    #fff4e6,
+    #fdebd2
+  );
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Headings inside cards */
+.contact-page .contact-card h3 {
+  color: #7a4a1e;
+}
+
+/* Text inside cards */
+.contact-page .contact-card p,
+.contact-page .contact-card li {
+  color: #3e2a1c;
+}
+
+/* Hover effect (desktop only) */
+@media (hover: hover) {
+  .contact-page .contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+
+
+/* ===============================
+ SWEETS PAGE – RESPONSIVE FIX
+=============================== */
+
+.sweets-section {
+  padding: 60px 20px;
+  background: #fffaf2;
+}
+
+/* GRID */
+.sweets-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.sweet-card {
+  background: #f7ecd8;
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sweet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.sweet-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.sweet-card h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  color: #5b3b1f;
+}
+
+.sweet-card .price {
+  font-weight: 600;
+  color: #8a5a2b;
+}
+
+/* CTA */
+.sweets-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sweets-btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+/* ===============================
+ TABLET
+=============================== */
+@media (max-width: 992px) {
+  .sweets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===============================
+ MOBILE – FIXES YOUR ISSUE
+=============================== */
+@media (max-width: 600px) {
+  .sweets-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .sweet-card img {
+    height: 130px;
+  }
+
+  .sweets-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+
+
+
+
+
+/* ===============================
+ MOBILE FIX FOR SWEETS PAGE
+=============================== */
+@media (max-width: 768px) {
+
+  /* Make grid 2 columns on mobile */
+  .sweets-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  /* Reset any forced grid positioning */
+  .sweet-card {
+    grid-column: auto !important;
+  }
+
+  /* Fix image shape on mobile */
+  .sweet-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  /* Improve text spacing */
+  .sweet-card h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .sweet-card .price {
+    font-size: 14px;
+  }
+
+  /* Center WhatsApp order button */
+  .sweets-cta {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  .sweets-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  /* ADD THIS */
+  .sweet-card {
+    grid-column: auto !important;
+  }
+
+  .sweet-card img {
+    height: 130px;
+    object-fit: cover; /* ADD THIS */
+  }
+
+}
+
+
+
+
+/* Desktop (default) */
+.sweets-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .sweets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sweets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+/* ===============================
+   CUSTOMER DETAILS FORM
+================================ */
+
+.customer-details {
+  max-width: 520px;
+  margin: 60px auto 40px;
+  background: #fff4e0;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.customer-details h2 {
+  margin-bottom: 8px;
+  color: #5a3a1c;
+}
+
+.customer-details p {
+  font-size: 14px;
+  color: #7a5a3a;
+  margin-bottom: 20px;
+}
+
+.customer-details input,
+.customer-details textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #e0caa0;
+  font-size: 15px;
+  outline: none;
+}
+
+.customer-details input:focus,
+.customer-details textarea:focus {
+  border-color: #d4a12d;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  .customer-details {
+    margin: 40px 15px;
+    padding: 22px;
+  }
+}
+
+
+
+
+
+
+/* ===== SWEETS ORDER SECTION ===== */
+
+.sweets-order {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff3dc;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.sweets-order h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sweets-checkboxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sweets-checkboxes label {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.qty-box {
+  margin-top: 20px;
+}
+
+.qty-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.total-box {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+.sweets-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.qty-input {
+  width: 80px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.active-sweet {
+  background: #fff3d6;
+  border-radius: 10px;
+}
+
+
+.sweets-order .sweets-btn {
+  display: block;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* Compact quantity input for sweets */
+.sweets-order .sweet-qty {
+  width: 100%;
+  max-width: 120px;   /* keeps it small */
+  height: 40px;       /* smaller height */
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+/* Align checkbox + text nicely */
+.sweets-checkboxes label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+  .sweets-order {
+    padding: 20px;
+  }
+
+  .sweets-order .sweet-qty {
+    max-width: 100px;
+    height: 36px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 601px) {
+  .sweets-checkboxes label {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sweet-qty {
+    margin-top: 0;
+  }
+}
+
+
+
+
+/* Each sweet row – tighter spacing */
+.sweets-checkboxes label {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 8px;              /* 👈 horizontal gap */
+  margin-bottom: 10px;  /* 👈 vertical gap between rows */
+}
+
+/* Checkbox size consistency */
+.sweets-checkboxes input[type="checkbox"] {
+  transform: scale(1);
+}
+
+/* Quantity input – compact */
+.sweet-qty {
+  width: 70px;
+  height: 34px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 0;            /* removes extra space */
+}
+
+/* Mobile fine-tune */
+@media (max-width: 600px) {
+  .sweets-checkboxes label {
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+
+  .sweet-qty {
+    width: 60px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
+
+
+
+.delivery-note {
+  text-align: center;
+  font-size: 13px;
+  color: #6b4f1d;
+  background: #fff6e2;
+  border: 1px dashed #e2c17a;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 10px 0 18px;
+  line-height: 1.4;
+}
+
+.delivery-note span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+
+
+
+
+.payment-options {
+  margin-top: 20px;
+  background: #fff7e6;
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.payment-options h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #5a3e16;
+  text-align: center;
+}
+
+.payment-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.payment-item input {
+  transform: scale(1.1);
+}
+
+.payment-note {
+  font-size: 12px;
+  color: #7a5a2b;
+  text-align: center;
+  margin-top: 6px;
+}
+
+
+
+
+
+.feedback-preview {
+  background: #fff6e0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feedback-box {
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.feedback-box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+
+
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.feedback-preview {
+  background: #fff6e0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.feedback-box {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-box p {
+  font-size: 15px;
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.feedback-box span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+
+
+
+
+/* FEEDBACK GRID */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* FEEDBACK CARD */
+.feedback-box {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* ⭐ Stars */
+.feedback-box .stars {
+  color: #f5b301;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Text */
+.feedback-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+/* Name */
+.feedback-box span {
+  font-weight: 600;
+  color: #8b5e00;
+}
+
+/* 🔥 HOVER EFFECT */
+.feedback-box:hover {
+  transform: translateY(-12px) scale(1.04);
+  border-color: #d4a72c;
+  background: linear-gradient(180deg, #fffdf7, #fff3d6);
+  box-shadow: 0 28px 55px rgba(212, 167, 44, 0.35);
+}
+
+
+
+
+
+
+
+
+
+/* FEEDBACK CARD – BASE */
+.feedback-box {
+  background: linear-gradient(
+    180deg,
+    #fffaf0 0%,
+    #fff3da 100%
+  );
+  border-radius: 18px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 2px solid rgba(212, 167, 44, 0.25);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle inner glow */
+.feedback-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 215, 120, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+
+
+
+
+
+
+
+.map-container {
+  width: 100%;
+  height: 400px;        /* REQUIRED */
+  border-radius: 18px;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .map-container {
+    height: 280px;
+  }
+}
+
+
+
+
+
+
+.review-note {
+  margin-top: 12px;
+  font-size: 1.3rem;
+  font-weight: 700; 
+  color: #6b5b3e;
+  text-align: center;
+  line-height: 2;
+}
+
+
+
+input:focus,
+textarea:focus {
+  background: #eaf3ff;
+  border-color: #d6a73a;
+}
+
+
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
+}
+
+
+
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+

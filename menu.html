@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhiwadi Bakers | Menu</title>
+
+  <link rel="icon" href="logo3.png">
+  <link rel="apple-touch-icon" href="logo3.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">
+  <link rel="preload" as="image" href="logo2.png">
+  <img src="logo2.png" alt="Bhiwadi Bakers Logo" decoding="async">
+  <span>Bhiwadi Bakers</span>
+</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sweets.html">Sweets</a>
+    <a href="menu.html" class="active">Catering Service</a>
+    <a href="onsite-cooking.html">On-Site Cooking</a>
+    <a href="contact.html">Contact</a>
+
+</header>
+
+
+<section class="page-header">
+  <h1>Build Your Menu</h1>
+  <p><h2>Select items to get instant estimate</h2></p>
+</section>
+
+<section class="container">
+  <label class="guest-label"><h2>Number Of Guests</h2></label>
+  <input type="number" id="guestCount" min="1" placeholder="Enter Number of Guests">
+</section>
+
+<section class="container">
+
+<!-- ACCORDION TEMPLATE (ALL ITEMS CLEAN – NO SLASHES) -->
+
+<div class="accordion">
+<button class="accordion-btn">Starters / Snacks</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="60"> Paneer Tikka</label>
+<label><input type="checkbox" data-price="55"> Chilli Paneer</label>
+<label><input type="checkbox" data-price="45"> Veg Seekh Kebab</label>
+<label><input type="checkbox" data-price="40"> Hara Bhara Kebab</label>
+<label><input type="checkbox" data-price="40"> Spring Roll</label>
+<label><input type="checkbox" data-price="40"> Veg Manchurian</label>
+</div>
+</div>
+
+
+<div class="accordion">
+<button class="accordion-btn">Fast Food</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="30"> Aloo Tikki</label>
+<label><input type="checkbox" data-price="55"> Mushroom Tikka</label>
+<label><input type="checkbox" data-price="25"> Gol Gappa</label>
+<label><input type="checkbox" data-price="30"> Papdi Chaat</label>
+<label><input type="checkbox" data-price="30"> Aloo Chaat</label>
+<label><input type="checkbox" data-price="40"> Chola Kulcha</label>
+<label><input type="checkbox" data-price="30"> Dahi Balla</label>
+<label><input type="checkbox" data-price="35"> Noodles</label>
+</div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Bread Based Fast Food</button>
+  <div class="accordion-content">
+    <label><input type="checkbox" data-price="60"> Veg Sandwich</label>
+    <label><input type="checkbox" data-price="70"> Cheese Sandwich</label>
+    <label><input type="checkbox" data-price="80"> Grilled Sandwich</label>
+    <label><input type="checkbox" data-price="100"> Club Sandwich</label>
+
+    <label><input type="checkbox" data-price="50"> Veg Burger</label>
+    <label><input type="checkbox" data-price="60"> Paneer Burger</label>
+
+    <label><input type="checkbox" data-price="70"> Pav Bhaji</label>
+
+    <label><input type="checkbox" data-price="50"> Veg Frankie / Roll</label>
+    <label><input type="checkbox" data-price="70"> Cheese Frankie / Roll</label>
+
+    <label><input type="checkbox" data-price="45"> Garlic Bread</label>
+    <label><input type="checkbox" data-price="70"> Pizza Bread Slice</label>
+
+    <label><input type="checkbox" data-price="20"> Bread Pakora</label>
+    <label><input type="checkbox" data-price="30"> Paneer Bread Pakora</label>
+  </div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Pakora</button>
+  <div class="accordion-content">
+    <label><input type="checkbox" data-price="25"> Plain Potato Pakora</label>
+    <label><input type="checkbox" data-price="25"> Onion Pakora</label>
+    <label><input type="checkbox" data-price="40"> Paneer Pakora</label>
+    <label><input type="checkbox" data-price="25"> Mix Veg Pakora</label>
+    <label><input type="checkbox" data-price="25"> Chilli Pakora</label>
+    <label><input type="checkbox" data-price="20"> Bread Pakora</label>
+    <label><input type="checkbox" data-price="35"> Corn Cheese Pakora</label>
+    <label><input type="checkbox" data-price="30"> Moong Dal Pakora</label>
+    <label><input type="checkbox" data-price="15"> Samosa</label>
+  </div>
+</div>
+
+<div class="accordion">
+<button class="accordion-btn">Sabzi</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="80"> Shahi Paneer</label>
+<label><input type="checkbox" data-price="80"> Kadhai Paneer</label>
+<label><input type="checkbox" data-price="50"> Mix Veg</label>
+<label><input type="checkbox" data-price="50"> Dal Makhani</label>
+<label><input type="checkbox" data-price="65"> Matar Paneer</label>
+<label><input type="checkbox" data-price="40"> Chole</label>
+<label><input type="checkbox" data-price="40"> Rajma</label>
+<label><input type="checkbox" data-price="35"> Kadhi Pakoda</label>
+<label><input type="checkbox" data-price="70"> Palak Paneer</label>
+<label><input type="checkbox" data-price="40"> Soya Chaap</label>
+<label><input type="checkbox" data-price="35"> Dal Tadka</label>
+</div>
+</div>
+
+<div class="accordion">
+<button class="accordion-btn">Roti / Bread</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="10"> Tawa Roti</label>
+<label><input type="checkbox" data-price="10"> Plain Tandoori Roti</label>
+<label><input type="checkbox" data-price="15"> Butter Tandoori Roti</label>
+<label><input type="checkbox" data-price="20"> Plain Naan</label>
+<label><input type="checkbox" data-price="25"> Butter Naan</label>
+<label><input type="checkbox" data-price="30"> Garlic Naan</label>
+<label><input type="checkbox" data-price="40"> Lachha Paratha</label>
+<label><input type="checkbox" data-price="20"> Missi Roti</label>
+<label><input type="checkbox" data-price="25"> Butter Missi Roti</label>
+<label><input type="checkbox" data-price="10"> Puri</label>
+</div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Salad</button>
+  <div class="accordion-content">
+
+    <label>
+      <input type="checkbox" data-price="5">
+      Seasonal Salad
+    </label>
+
+    <label>
+      <input type="checkbox" data-price="25">
+      Fruit Salad
+    </label>
+
+    <label>
+      <input type="checkbox" data-price="50">
+      Creamy Fruit Salad
+    </label>
+
+    <label>
+      <input type="checkbox" data-price="45">
+      Custard Fruit Salad
+    </label>
+
+    <label>
+      <input type="checkbox" data-price="70">
+      Dry Fruit Salad
+    </label>
+
+  </div>
+</div>
+
+
+
+<div class="accordion">
+<button class="accordion-btn">Sweets</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="25"> Rasmalai (per piece)</label>
+<label><input type="checkbox" data-price="20"> Gulab Jamun (per piece)</label>
+<label><input type="checkbox" data-price="15"> Rasgulla (per piece)</label>
+<label><input type="checkbox" data-price="35"> Barfi (per piece)</label>
+<label><input type="checkbox" data-price="45"> Kaju Katli (per piece)</label>
+<label><input type="checkbox" data-price="30"> Cham Cham (per piece)</label>
+<label><input type="checkbox" data-price="25"> Ghewar Malai/Rabdi (per serve)</label>
+<label><input type="checkbox" data-price="35"> Gajar Halwa (per serve)</label>
+<label><input type="checkbox" data-price="30"> Moong Halwa (per serve)</label> 
+<label><input type="checkbox" data-price="40"> Dry Fruit Halwa (per serve)</label>
+</div>
+</div>
+
+<div class="accordion">
+<button class="accordion-btn">Cake</button>
+<div class="accordion-content">
+<label><input type="checkbox" data-price="27"> Vanilla (per serve)</label>
+<label><input type="checkbox" data-price="30"> Chocolate (per serve)</label>
+<label><input type="checkbox" data-price="30"> Pineapple (per serve)</label>
+<label><input type="checkbox" data-price="34"> Black Forest (per serve)</label>
+<label><input type="checkbox" data-price="34"> Strawberry (per serve)</label>
+<label><input type="checkbox" data-price="34"> Mango (per serve)</label>
+<label><input type="checkbox" data-price="30"> Butter Scotch (per serve)</label>
+<label><input type="checkbox" data-price="40"> Red Velvet (per serve)</label>
+<label><input type="checkbox" data-price="34"> Coffee (per serve)</label>
+</div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Cold Drinks</button>
+  <div class="accordion-content">
+    <label><input type="checkbox" data-price="50"> Cold Coffee</label>
+
+    <label><input type="checkbox" data-price="20"> Coke</label>
+    <label><input type="checkbox" data-price="20"> Pepsi</label>
+    <label><input type="checkbox" data-price="20"> Mirinda</label>
+    <label><input type="checkbox" data-price="20"> Limca</label>
+
+    <label><input type="checkbox" data-price="15"> Jaljeera</label>
+    <label><input type="checkbox" data-price="15"> Nimbu Shikanji</label>
+    <label><input type="checkbox" data-price="20"> Lemon Soda</label>
+    <label><input type="checkbox" data-price="50"> Fruit Shake</label>
+    <label><input type="checkbox" data-price="10"> Cold Water Bottle</label>
+    <label><input type="checkbox" data-price="40"> Mojito</label>
+    <label><input type="checkbox" data-price="40"> Mocktail</label>
+  </div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Tea & Coffee</button>
+  <div class="accordion-content">
+    <label><input type="checkbox" data-price="10"> Tea</label>
+    <label><input type="checkbox" data-price="20"> Coffee</label>
+  </div>
+</div>
+
+<div class="accordion">
+  <button class="accordion-btn">Soups</button>
+  <div class="accordion-content">
+    <label><input type="checkbox" data-price="20"> Tomato Soup</label>
+    <label><input type="checkbox" data-price="25"> Sweet Corn Soup</label>
+    <label><input type="checkbox" data-price="20"> Veg Clear Soup</label>
+    <label><input type="checkbox" data-price="25"> Hot & Sour Soup</label>
+    <label><input type="checkbox" data-price="30"> Manchow Soup</label>
+    <label><input type="checkbox" data-price="40"> Cream of Mushroom Soup</label>
+  </div>
+</div>
+
+
+</section>
+
+<section class="container">
+<div class="total-box">
+<h2>Total Estimated Amount</h2>
+<p id="totalAmount">₹0</p>
+<a id="whatsappEnquiry" class="btn">Send Enquiry on WhatsApp</a>
+</div>
+</section>
+
+<a href="https://wa.me/919784002700" class="whatsapp-float" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+<body>
+
+<footer class="footer">
+  © 2026 Bhiwadi Bakers. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/919784002700?text=Hello%20I%20would%20like%20to%20enquire%20about%20catering%20services%20from%20Bhiwadi%20Bakers."
+   class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
+
+</body>
+</html>
+
+
+

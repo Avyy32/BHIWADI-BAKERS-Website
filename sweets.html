@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhiwadi Bakers | Sweets</title>
+
+  <link rel="icon" href="logo3.png">
+  <link rel="apple-touch-icon" href="logo3.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<header class="nav">
+  <div class="logo">
+    <link rel="preload" as="image" href="logo2.png">
+    <img src="logo2.png" alt="Bhiwadi Bakers Logo" decoding="async">
+    <span>Bhiwadi Bakers</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="sweets.html" class="active">Sweets</a>
+    <a href="menu.html">Catering Service</a>
+    <a href="onsite-cooking.html">On-Site Cooking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- ========== SWEETS HERO ========== -->
+<section class="sweets-hero">
+  <h1>Our Sweets Collection</h1>
+  <p class="sweets-tagline">
+    <h2>Available for retail, bulk orders, functions & gifting</h2>
+  </p>
+</section>
+
+<!-- ========== SWEETS SECTION ========== -->
+<section class="sweets-section">
+
+  <!-- ===== TOP ROW (4 SWEETS) ===== -->
+  <div class="sweets-row row-4">
+    <div class="sweet-card">
+      <img src="rasmalai.png" loading="lazy" decoding="async" alt="Rasmalai">
+      <h3>Rasmalai</h3>
+      <p class="price">₹25 / piece</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="gulab jamun.png" loading="lazy" decoding="async" alt="Gulab Jamun">
+      <h3>Gulab Jamun</h3>
+      <p class="price">₹350 / kg</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="rasgulla.png" loading="lazy" decoding="async" alt="Rasgulla">
+      <h3>Rasgulla</h3>
+      <p class="price">₹225 / kg</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="barfi.png" loading="lazy" decoding="async" alt="Barfi">
+      <h3>Barfi</h3>
+      <p class="price">₹450 / kg</p>
+    </div>
+  </div>
+
+  <!-- ===== MIDDLE ROW (3 SWEETS) ===== -->
+  <div class="sweets-row row-3">
+    <div class="sweet-card">
+      <img src="milk cake.png" loading="lazy" decoding="async" alt="Milk Cake">
+      <h3>Milk Cake</h3>
+      <p class="price">₹450 / kg</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="peda.png" loading="lazy" decoding="async" alt="Peda">
+      <h3>Peda</h3>
+      <p class="price">₹450 / kg</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="kaju katli.png" loading="lazy" decoding="async" alt="Kaju Katli">
+      <h3>Kaju Katli</h3>
+      <p class="price">₹800 / kg</p>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM ROW (2 SWEETS) ===== -->
+  <div class="sweets-row row-2">
+    <div class="sweet-card">
+      <img src="cham cham.png" loading="lazy" decoding="async" alt="Cham Cham">
+      <h3>Cham Cham</h3>
+      <p class="price">₹400 / kg</p>
+    </div>
+
+    <div class="sweet-card">
+      <img src="ghewar.png" loading="lazy" decoding="async" alt="Ghewar Malai">
+      <h3>Ghewar Malai</h3>
+      <p class="price">₹400 / kg</p>
+    </div>
+  </div>
+<!-- ========== SWEETS ORDER SECTION ========== -->
+<!-- ========== SWEETS ORDER SECTION ========== -->
+<section class="sweets-order">
+
+  <h2>Select Sweets</h2>
+
+  <div class="sweets-checkboxes">
+
+    <!-- 1. Rasmalai (per piece) -->
+    <label class="sweet-line">
+  <input type="checkbox" class="sweet-item"
+         data-name="Rasmalai"
+         data-price="25"
+         data-unit="piece">
+
+  <span>Rasmalai (₹25 / piece)</span>
+
+  <input type="number"
+         class="sweet-qty"
+         min="0"
+         step="0.1"
+         placeholder="Qty">
+</label>
+
+    <!-- 2. Gulab Jamun -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Gulab Jamun"
+             data-price="350"
+             data-unit="kg">
+      <span>Gulab Jamun (₹350 / kg)</span>
+      
+    <input type="number"
+         class="sweet-qty"
+         min="0"
+         step="0.1"
+         placeholder="Kg">
+</label>
+
+    <!-- 3. Rasgulla -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Rasgulla"
+             data-price="225"
+             data-unit="kg">
+      <span>Rasgulla (₹225 / kg)</span>
+      
+    <input type="number"
+         class="sweet-qty"
+         min="0"
+         step="0.1"
+         placeholder="Kg">
+</label>
+    <!-- 4. Barfi -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Barfi"
+             data-price="450"
+             data-unit="kg">
+      <span>Barfi (₹450 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1" placeholder="Kg">
+    </label>
+
+    <!-- 5. Milk Cake -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Milk Cake"
+             data-price="450"
+             data-unit="kg">
+      <span>Milk Cake (₹450 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1"  placeholder="Kg">
+    </label>
+
+    <!-- 6. Peda -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Peda"
+             data-price="450"
+             data-unit="kg">
+      <span>Peda (₹450 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1" placeholder="Kg">
+    </label>
+
+    <!-- 7. Kaju Katli -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Kaju Katli"
+             data-price="800"
+             data-unit="kg">
+      <span>Kaju Katli (₹800 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1" placeholder="Kg">
+    </label>
+
+    <!-- 8. Cham Cham -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Cham Cham(kg)"
+             data-price="400"
+             data-unit="kg">
+      <span>Cham Cham (₹400 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1" placeholder="Kg">
+    </label>
+
+    <!-- 9. Ghewar Malai -->
+    <label class="sweet-line">
+      <input type="checkbox" class="sweet-item"
+             data-name="Ghewar Malai"
+             data-price="400"
+             data-unit="kg">
+      <span>Ghewar Malai (₹400 / kg)</span>
+      <input type="number" class="sweet-qty" min="0" step="0.1" placeholder="Kg">
+    </label>
+
+  </div>
+
+  <div class="total-box">
+    <strong>Total Amount: <span id="sweetTotal">₹0</span></strong>
+  </div>
+
+</section>
+
+
+
+ 
+  
+  
+  <!-- ========== CUSTOMER DETAILS (SWEETS) ========== -->
+<section class="customer-details">
+  <h2>Customer Details</h2>
+  <p><h3>Please fill your details to place a sweets order</h3></p>
+
+  <form id="customerForm">
+    <input
+      type="text"
+      id="custName"
+      placeholder="Full Name"
+      required
+    >
+
+    <input
+      type="tel"
+      id="custPhone"
+      placeholder="Mobile Number"
+      required
+    >
+
+    <textarea
+      id="custAddress"
+      rows="3"
+      placeholder="Delivery Address / Location"
+      required
+    ></textarea>
+    
+
+<button
+  type="button"
+  id="sweetOrderBtn"
+  class="btn sweets-btn">
+  Order Sweets on WhatsApp
+</button>
+
+  </form>
+</section>
+
+<section class="payment-options">
+  <h2>Payment Options</h2>
+
+  <label>
+    <input type="radio" name="paymentMethod" value="Cash on Delivery" checked>
+    Cash on Delivery
+  </label>
+
+  <label>
+    <input type="radio" name="paymentMethod" value="UPI">
+    UPI (Google Pay / PhonePe / Paytm)
+  </label>
+
+  <p class="payment-note">
+    <h3>💡 Payment will be collected after order confirmation on WhatsApp</h3>
+  </p>
+</section>
+
+
+
+
+
+
+</section>
+
+<p class="delivery-note">
+  🚚 <strong>Free delivery within 7 km</strong> • <strong>Minimum order: 2 kg</strong><br>
+  <span>Delivery charges will apply beyond 7 km.</span>
+</p>
+
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  © 2026 Bhiwadi Bakers. All Rights Reserved.
+</footer>
+
+<!-- ========== WHATSAPP FLOAT ========== -->
+<a
+  href="https://wa.me/919784002700"
+  class="whatsapp-float"
+  target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
